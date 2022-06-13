@@ -1,0 +1,26 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+/*#containerRegistrar {
+    padding-top:2rem;
+    padding-bottom:2rem;
+    background-color: #EEEEEE;
+}*/
+#containerLogin {
+    padding-top:5rem;
+}

@@ -1,0 +1,48 @@
+﻿@model PostgreSQLEF.Models.DB.Usuario
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<h1 class="text-center">CRUD USUARIOS</h1>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card border">
+            <div class="card-header">
+                <h3><strong>Editar Usuario</strong></h3>
+            </div>
+            <div class="container">
+               <div class="card-body">
+                   <form asp-action="Crear">
+                       <!--Id del usuario como campo oculto-->
+                       <input type="hidden" form="Id"/>
+                       <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                       <div class="form-group">
+                           <label asp-for="Nombre" class="control-label"></label>
+                           <input asp-for="Nombre" class="form-control" placeholder="Nombre de usuario"/>
+                           <span asp-validation-for="Nombre" class="text-danger"></span>
+                       </div>
+                       <div class="form-group">
+                           <label asp-for="Telefono" class="control-label"></label>
+                           <input asp-for="Telefono" class="form-control" placeholder="Ejemplo: 78391548"/>
+                           <span asp-validation-for="Telefono" class="text-danger"></span>
+                       </div>
+                       <div class="form-group">
+                           <label asp-for="Puesto" class="control-label"></label>
+                           <input asp-for="Puesto" class="form-control" placeholder="Ejemplo: 58015779"/>
+                           <span asp-validation-for="Puesto" class="text-danger"></span>
+                       </div>
+                       <div class="form-group">
+                           <label asp-for="Email" class="control-label"></label>
+                           <input asp-for="Email" class="form-control" placeholder="alguien@ejemplo.com"/>
+                           <span asp-validation-for="Email" class="text-danger"></span>
+                       </div>
+                       <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-success"><i class="bi bi-pencil-fill"></i> Editar Usuario</button>
+                       </div>
+                   </form>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
